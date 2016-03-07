@@ -5,7 +5,9 @@ Develop ember apps from container, nothing is installed locally except docker.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* change into the docker_ember_cli
+* cd into the docker_ember_cli
+
+You may either build container from Docker file or allow docker-compose to pull it from hub
 
 Initiate new project:
 * `docker-compose run --rm ember init`
