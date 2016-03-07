@@ -4,8 +4,8 @@ Develop ember apps from container, nothing is installed locally except docker.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* cd into the docker_ember_cli
+* `git clone git@github.com:rokka-n/containers.git` this repo
+* cd into the `docker_ember_cli`
 
 You may either build container from Docker file or allow docker-compose to pull it from hub
 
@@ -13,9 +13,11 @@ Initiate new project:
 * `docker-compose run --rm ember init`
 
 Notice that .ember_cli contains option for liveReloadBaseHost
-Add the host to the /etc/hosts file, with resolution to docker-machine ip
+
+Add hostname from liveReloadBaseHost to /etc/hosts file, with resolution to docker-machine ip
+
 Run as sudo:
-* `echo "`docker-machine ip` ember" >> /etc/hosts"`
+* `echo "\`docker-machine ip\` ember" >> /etc/hosts"`
 
 ## Running / Development
 
@@ -38,7 +40,7 @@ Make use of the many generators for code, try `docker-compose run --rm ember hel
 
 ## Other tools
 You can run npm, bower, phantomjs or add your own commands, please see docker-compose.yml
-* `docker-compose run --rm node'
+* `docker-compose run --rm node'`
 
 You may add alias to .bashrc to make above commands short and sweet
 * `alias node='docker-compose -f ~/ember/docker_ember_cli/docker-compose.yml run --rm npm'`
