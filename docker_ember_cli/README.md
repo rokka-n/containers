@@ -1,6 +1,6 @@
 # Working with ember from docker container 
 
-Develop ember apps from container, nothing is installed locally except docker.
+Develop ember apps from a container. Nothing is required to be installed locally, except docker.
 
 ## Installation
 
