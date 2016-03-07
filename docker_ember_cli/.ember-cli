@@ -1,0 +1,16 @@
+{
+  /**
+    Ember CLI sends analytics information by default. The data is completely
+    anonymous, but there are times when you might want to disable this behavior.
+
+    Setting `disableAnalytics` to true will prevent any data from being sent.
+  */
+  "liveReload": true,
+  "liveReloadPort": "35729",
+  "disableAnalytics": false,
+  "environment": "development",
+  "host": "0.0.0.0",
+  "watcher": "polling",
+  "liveReloadHost": "0.0.0.0",
+  "liveReloadBaseHost": "ember"
+}
